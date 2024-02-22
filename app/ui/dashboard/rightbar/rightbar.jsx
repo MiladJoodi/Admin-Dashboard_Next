@@ -8,9 +8,9 @@ const Rightbar = () => {
             {/* one */}
             <div className={styles.item}>
                 <div className={styles.bgContainer}>
-                    <Image src="/astronaut.png" alt="" fill />
+                    <Image src="/astronaut.png" alt="" fill/>
                 </div>
-                <div className={styles.texts}>
+                <div className={styles.text}>
                     <span className={styles.notification}>🔥 Available Now</span>
 
                     <h3 className={styles.title}>how to use the new version of the admin dashboard</h3>
@@ -27,15 +27,12 @@ const Rightbar = () => {
             </div>
             {/* tow */}
             <div className={styles.item}>
-                <div className="bgContainer">
-                    <Image src="/astronaut.png" alt="" fill />
-                </div>
-                <div className={styles.texts}>
-                    <span className={styles.notification}>🔥 Available Now</span>
+                <div className={styles.text}>
+                    <span className={styles.notification}>🚀 Coming Soon</span>
 
-                    <h3 className={styles.title}>how to use the new version of the admin dashboard</h3>
+                    <h3 className={styles.title}>New server actions are available, partial pre-rendering os coming soon</h3>
 
-                    <span className={styles.subtitle}>Takes 4 minutes to learn</span>
+                    <span className={styles.subtitle}>Boost your productivity</span>
                     
                     <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem pariatur est</p>
 
