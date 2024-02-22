@@ -1,29 +1,37 @@
-.container{
+.container {
     display: flex;
 }
-.menu{
+
+.menu {
     flex: 1;
     background-color: var(--bgSoft);
     padding: 20px;
 }
-.content{
+
+.content {
     flex: 4;
     padding: 20px;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
-.main{
+
+.main {
     flex: 3;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.cards{
 
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
-.side{
-    flex:1;
+
+.side {
+    flex: 1;
 }

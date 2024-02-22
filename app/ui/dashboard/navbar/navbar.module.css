@@ -4,6 +4,7 @@
     background-color: var(--bgSoft);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .title{

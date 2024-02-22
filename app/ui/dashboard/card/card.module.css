@@ -1,0 +1,8 @@
+.container {
+    background-color: var(--bg);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
