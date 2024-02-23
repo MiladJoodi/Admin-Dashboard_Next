@@ -19,7 +19,7 @@ const SingleUserPage = () => {
                     <input type="email" name="email" placeholder="johnDoen@gmail.com" />
 
                     <label>Password</label>
-                    <input type="password" name="password" placeholder="Password" />
+                    <input type="password" name="password" />
 
                     <label>Phone</label>
                     <input type="phone" name="phone" placeholder="+123456" />
@@ -38,6 +38,8 @@ const SingleUserPage = () => {
                         <option value={true}>Yes</option>
                         <option value={false}>No</option>
                     </select>
+
+                    <button>Update</button>
                 </form>
             </div>
         </div>

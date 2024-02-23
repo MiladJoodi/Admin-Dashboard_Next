@@ -28,7 +28,7 @@
     align-items: center;
     gap: 10px;
 }
-.productImage{
+.product Image{
     border-radius: 50%;
     object-fit: cover;
 }
