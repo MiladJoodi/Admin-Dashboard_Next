@@ -5,9 +5,10 @@ import Image from "next/image";
 import Pagination from "../pagination/pagination";
 import { fetchUsers } from "@/app/lib/data";
 
-const UsersPage = async () => {
+const UsersPage = async ({searchParams}) => {
+    const q = searchParams?.q || "";
   // FETCH
-  const users = await fetchUsers();
+  const users = await fetchUsers(q);
 
   console.log(users);
 
