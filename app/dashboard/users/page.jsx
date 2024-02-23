@@ -11,6 +11,8 @@ const UsersPage = async () => {
     // FETCH
     const users = await fetchUsers();
 
+    console.log(users)
+
     return (
         <div className={styles.container}>
 
@@ -33,6 +35,7 @@ const UsersPage = async () => {
                     </tr>
                 </thead>
                 <tbody>
+                    {users.map(user=>(
                     <tr>
                         <td>
                             <div className={styles.user}>
@@ -57,6 +60,7 @@ const UsersPage = async () => {
                             </div>
                         </td>
                     </tr>
+                    ))}
                 </tbody>
             </table>
             <Pagination />
