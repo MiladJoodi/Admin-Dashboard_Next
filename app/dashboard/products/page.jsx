@@ -10,8 +10,8 @@ const ProductsPage = () => {
         <div className={styles.container}>
 
             <div className={styles.top}>
-                <Search placeholder="Search for a user" />
-                <Link href="/dashboard/user/add">
+                <Search placeholder="Search for a product..." />
+                <Link href="/dashboard/products/add">
                     <button className={styles.addButton}>Add New</button>
                 </Link>
             </div>
@@ -19,29 +19,29 @@ const ProductsPage = () => {
             <table className={styles.table}>
                 <thead>
                     <tr>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Create At</td>
-                        <td>Role</td>
-                        <td>Status</td>
+                        <td>Title</td>
+                        <td>Description</td>
+                        <td>Price</td>
+                        <td>Created At</td>
+                        <td>Stock</td>
                         <td>Action</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <div className={styles.user}>
-                                <Image src="/noavatar.png" alt="" width={40} height={40} className={styles.userImage} />
-                                John Dev
+                            <div className={styles.product}>
+                                <Image src="/noproduct.jpg" alt="" width={40} height={40} className={styles.productImage} />
+                                IPhone 
                             </div>
                         </td>
-                        <td>john@gmail.com</td>
+                        <td>Desc</td>
+                        <td>$999</td>
                         <td>13.01.2022</td>
-                        <td>Admin</td>
-                        <td>active</td>
+                        <td>72</td>
                         <td>
                             <div className={styles.buttons}>
-                            <Link href="/">
+                            <Link href="/dashboard/products/test">
                                 <button className={`${styles.button} ${styles.view}`}>
                                     View
                                 </button>
