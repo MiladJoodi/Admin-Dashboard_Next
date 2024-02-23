@@ -15,7 +15,8 @@
     "react": "18",
     "react-dom": "18",
     "react-icons": "^5.0.1",
-    "recharts": "^2.12.1"
+    "recharts": "^2.12.1",
+    "use-debounce": "^9.0.4"
   },
   "devDependencies": {
     "eslint": "8",
