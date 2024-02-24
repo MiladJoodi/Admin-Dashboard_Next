@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "14.0.1",
+    "bcrypt": "^5.1.1",
     "mongoose": "^8.2.0",
     "next": "14.0.1",
     "react": "18",
