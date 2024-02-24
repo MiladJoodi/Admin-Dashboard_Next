@@ -35,7 +35,7 @@ export const fetchUser = async (id) => {
 };
 
 //FETCH PRODUCTS
-export const fetchProducts = async (q, page) => {
+export const fetchProducts = async (q,page) => {
   const regex = new RegExp(q, "i");
 
   const ITEM_PER_PAGE = 2;
