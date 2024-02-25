@@ -1,8 +1,8 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import {authConfig} from "./authconfig";
-import { connectToDB } from "./app/lib/utils";
-import { User } from "./app/lib/models";
+import { connectToDB } from "./lib/utils";
+import { User } from "./lib/models";
 
 const login = async (credentials)=>{
 try {
@@ -29,7 +29,8 @@ export const {signIn, signOut, auth} =  NextAuth({
     CredentialsProvider({
       async authorize(credentials) {
         try {
-            await login(credentials)
+            const user = await login(credentials);
+            return user;
         } catch (error) {
             return null
         }
