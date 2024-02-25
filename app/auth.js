@@ -50,8 +50,8 @@ export const { signIn, signOut, auth } = NextAuth({
     },
     async session({session, token}){
       if(token){
-        session.username = token.username
-        session.img = token.img
+        session.user.username = token.username
+        session.user.img = token.img
       }
       return session;
     },
