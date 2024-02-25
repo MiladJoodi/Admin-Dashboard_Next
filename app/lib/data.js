@@ -65,3 +65,15 @@ export const fetchProduct= async (id) => {
     throw new Error("Failed to fetch product!");
   }
 };
+
+//LOGIN AUTHENTICATION
+export const authenticat = async (formData)=>{
+  const {username, password} = Object.fromEntries(formData)
+
+  try{
+    await signIn("credentials", {username, password})
+  }catch(err){
+    console.log(err)
+    throw err;
+  }
+}
