@@ -160,14 +160,15 @@ export const deleteUser = async (formData) => {
 };
 
 //LOGIN AUTHENTICATION
-export const authenticate = async (prevState, formData)=>{
+export const authenticate = async (formData)=>{
   const {username, password} = Object.fromEntries(formData)
+  console.log(username)
 
   try{
     await signIn("credentials", {username, password})
   }catch(err){
     console.log(err)
-    return "Wrong Credentials"
+    return {error: "Wrong Credentials"}
   }
 }
 
