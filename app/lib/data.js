@@ -67,7 +67,7 @@ export const fetchProduct= async (id) => {
 };
 
 //LOGIN AUTHENTICATION
-export const authenticat = async (formData)=>{
+export const authenticate = async (formData)=>{
   const {username, password} = Object.fromEntries(formData)
 
   try{
